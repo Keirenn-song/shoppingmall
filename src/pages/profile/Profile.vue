@@ -31,7 +31,7 @@ export default {
     background-color: #e6e6e6;
   }
   .nav-bar{
-    background-color: rgb(235, 137, 154);
+    background-color: var(--color-tint);
     color: #fff;
     font-size: 20px;
   }

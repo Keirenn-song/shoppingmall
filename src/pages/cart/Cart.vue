@@ -1,5 +1,5 @@
 <template>
-  <div class="cart">
+  <div class="cart ignore">
     <nav-bar class="nav-bar">
       <div slot="center">购物车({{cartLength}})</div>
     </nav-bar>
@@ -38,20 +38,21 @@ export default {
 </script>
 
 <style scoped>
-  .cart{
+  /* 添加ignore 防止此处px转化为vw，影响响应式布局 */
+  .cart.ignore{
     background-color: #f2f5f8;
+    height: calc(100vh - 49px);
   }
   .nav-bar{
-    position: relative;
-    background-color: var(--color-high-text);
+    background-color: var(--color-tint);
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 
     z-index: 99;
   }
   .content{
-    height: calc(100vh - 44px - 49px - 40px);
+    height: calc(100% - 44px - 40px);
     overflow: hidden;
   }
 </style>

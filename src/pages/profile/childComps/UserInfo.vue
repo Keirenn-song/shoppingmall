@@ -28,7 +28,7 @@ export default {
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: rgb(235, 137, 154);
+    background-color: var(--color-tint);
     color: #fff;
   }
   .user-img{
